@@ -4,33 +4,43 @@ import productMobile from "../assets/images/image-product-mobile.jpg";
 
 export function ProductCard() {
   return (
-    <article>
+    <article className="w-full max-w-87.5 overflow-clip rounded-lg bg-white">
       <picture>
         <source media="(min-width: 40rem)" srcSet={productDesktop} width={600} height={900} />
         <img
+          className="block h-auto w-full"
           src={productMobile}
           alt="A bottle of Gabrielle Chanel Paris perfume lying on a white surface beside green leaves"
           width={700}
           height={684}
         />
       </picture>
-      <div>
-        <p>Perfume</p>
-        <h1 className="font-serif">Gabrielle Essence Eau De Parfum</h1>
-        <p>
-          A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator
-          for the House of CHANEL.
-        </p>
-        <p className="font-serif">
-          <span className="sr-only">Current price: </span>
-          $149.99
-        </p>
-        <p>
-          <span className="sr-only">Original price: </span>
-          <s>$169.99</s>
-        </p>
-        <button type="button">
-          <img src={cartIcon} alt="" aria-hidden="true" width={15} height={16} />
+      <div className="flex flex-col gap-6 p-8">
+        <div className="flex flex-col gap-6">
+          <p className="text-preset-4 uppercase">Perfume</p>
+          <h1 className="font-serif text-preset-1 text-black">Gabrielle Essence Eau De Parfum</h1>
+          <p className="text-preset-3">
+            A floral, solar and voluptuous interpretation composed by Olivier Polge,
+            Perfumer-Creator for the House of CHANEL.
+          </p>
+        </div>
+        <div className="flex items-center gap-4">
+          <p className="font-serif text-preset-1 text-green-500">
+            <span className="sr-only">Current price: </span>
+            $149.99
+          </p>
+          <p className="text-preset-5">
+            <span className="sr-only">Original price: </span>
+            <s>$169.99</s>
+          </p>
+        </div>
+        <button
+          type="button"
+          className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-lg bg-green-500 px-8 py-4 text-preset-2 text-white transition-colors hover:bg-green-700 focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-green-700"
+        >
+          <span className="grid size-4.5 place-items-center" aria-hidden="true">
+            <img src={cartIcon} alt="" width={15} height={16} />
+          </span>
           Add to Cart
         </button>
       </div>
