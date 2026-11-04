@@ -4,18 +4,18 @@ import productMobile from "../assets/images/image-product-mobile.jpg";
 
 export function ProductCard() {
   return (
-    <article className="w-full max-w-87.5 overflow-clip rounded-lg bg-white">
-      <picture>
+    <article className="w-full max-w-87.5 overflow-clip rounded-lg bg-white sm:grid sm:max-w-150 sm:grid-cols-2">
+      <picture className="sm:block">
         <source media="(min-width: 40rem)" srcSet={productDesktop} width={600} height={900} />
         <img
-          className="block h-auto w-full"
+          className="block h-auto w-full sm:h-full sm:object-cover sm:object-left"
           src={productMobile}
           alt="A bottle of Gabrielle Chanel Paris perfume lying on a white surface beside green leaves"
           width={700}
           height={684}
         />
       </picture>
-      <div className="flex flex-col gap-6 p-8">
+      <div className="flex flex-col gap-6 p-8 sm:gap-8">
         <div className="flex flex-col gap-6">
           <p className="text-preset-4 uppercase">Perfume</p>
           <h1 className="font-serif text-preset-1 text-black">Gabrielle Essence Eau De Parfum</h1>
