@@ -34,7 +34,7 @@ From the Frontend Mentor brief:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [frontendmentor.io/solutions/product-preview-card-Z2yjpsQh33](https://www.frontendmentor.io/solutions/product-preview-card-Z2yjpsQh33)
 - Repository: [github.com/temivan/product-preview-card](https://github.com/temivan/product-preview-card)
 - Live Site URL: [temivan.github.io/product-preview-card](https://temivan.github.io/product-preview-card/)
 
