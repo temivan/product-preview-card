@@ -11,10 +11,6 @@
 ###############################################
 *.xd
 
-# Avoid your project being littered with annoying .DS_Store files!
-.DS_Store
-.prettierignore
-
 # Dependencies
 node_modules/
 
@@ -27,10 +23,16 @@ dist/
 .env.*.local
 *.local
 
-# Editors
+# IDE and editors
 .vscode/
 .idea/
 *.swp
+
+# Agent worktrees
+.claude/worktrees/
+
+# OS files
+.DS_Store
 
 # Logs
 *.log
