@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/Fraunces-Variable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Design tokens from the style guide. The default palette and font stacks are
+   cleared so only these tokens can be used. */
+@theme {
+  --color-*: initial;
+  --color-green-500: hsl(158 36% 37%);
+  --color-green-700: hsl(158 42% 18%);
+  --color-black: hsl(212 21% 14%);
+  --color-grey: hsl(228 12% 48%);
+  --color-cream: hsl(30 38% 92%);
+  --color-white: hsl(0 0% 100%);
+
+  --font-*: initial;
+  --font-sans: "Montserrat", sans-serif;
+  --font-serif: "Fraunces", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream font-sans text-grey antialiased;
+  }
+}
