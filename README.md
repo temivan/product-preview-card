@@ -36,7 +36,7 @@ From the Frontend Mentor brief:
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Repository: [github.com/temivan/product-preview-card](https://github.com/temivan/product-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [temivan.github.io/product-preview-card](https://temivan.github.io/product-preview-card/)
 
 ## My process
 
