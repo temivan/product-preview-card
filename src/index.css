@@ -52,6 +52,11 @@
   --text-preset-5--font-weight: 500;
 }
 
+/* Fraunces display text: the product name and the current price. */
+@utility text-display {
+  @apply font-serif text-preset-1;
+}
+
 @layer base {
   body {
     @apply bg-cream font-sans text-grey antialiased;
